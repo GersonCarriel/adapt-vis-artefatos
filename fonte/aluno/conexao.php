@@ -1,10 +1,10 @@
 <?php
 // conexao.php
 
-$host = 'localhost';
+$host = '????????';
 $usuario = '';
 $senha = '???????';
-$banco = 'adapt_vis_db';
+$banco = '??????';
 
 $conn = new mysqli($host, $usuario, $senha, $banco);
 
