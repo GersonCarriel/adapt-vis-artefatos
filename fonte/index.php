@@ -243,12 +243,12 @@ if ($path === '/lti/login') {
         $platforms = require $cfgFile;
     }
     $plat = $platforms[$profile] ?? [
-        'issuer'         => $_ENV['LTI13_PLATFORM_ISS']      ?? 'http://18.225.92.145',
+        'issuer'         => $_ENV['LTI13_PLATFORM_ISS']      ?? 'http://??????????',
         'client_id'      => $_ENV['LTI13_CLIENT_ID']         ?? '',
         'deployment_id'  => $_ENV['LTI13_DEPLOYMENT_ID']     ?? '',
-        'auth_login_url' => $_ENV['LTI13_AUTH_LOGIN_URL']    ?? 'http://18.225.92.145/mod/lti/auth.php',
-        'token_url'      => $_ENV['LTI13_AUTH_TOKEN_URL']    ?? 'http://18.225.92.145/mod/lti/token.php',
-        'jwks_url'       => $_ENV['LTI13_KEYSET_URL']        ?? 'http://18.225.92.145/mod/lti/certs.php',
+        'auth_login_url' => $_ENV['LTI13_AUTH_LOGIN_URL']    ?? 'http://??????????/mod/lti/auth.php',
+        'token_url'      => $_ENV['LTI13_AUTH_TOKEN_URL']    ?? 'http://??????????/mod/lti/token.php',
+        'jwks_url'       => $_ENV['LTI13_KEYSET_URL']        ?? 'http://??????????/mod/lti/certs.php',
     ];
     $authUrl  = $plat['auth_login_url'];
     $clientId = $plat['client_id'];
