@@ -1,0 +1,392 @@
+Painel lateral direito */
+.right-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f5f5;
+}
+
+/* Área fixa de visualização */
+.fixed-view-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 16px;
+  background-color: #fff;
+  border-left: 1px solid #ddd;
+}
+
+/* Botão de voltar */
+.view-header {
+  margin-bottom: 8px;
+}
+
+.back-button {
+  padding: 6px 12px;
+  background-color: #4a5a8a;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Área de conteúdo */
+.content-display {
+  flex: 1;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 16px;
+  overflow-y: auto;
+  min-height: 300px;
+}
+
+.placeholder-text {
+  text-align: center;
+  color: #666;
+  font-size: 16px;
+  padding: 40px 0;
+}
+
+/* Sugestões */
+.suggestions-scroll {
+  max-height: 160px;
+  overflow-y: auto;
+  margin-top: 16px;
+  padding-right: 8px;
+}
+
+.suggestions-header {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.suggestion-item {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  border-bottom: 1px solid #e9ecef;
+  cursor: pointer;
+}
+
+.suggestion-item:hover {
+  background-color: #eef;
+}
+
+/* Extras */
+.extras-area {
+  margin-top: 16px;
+  padding-top: 12px;
+  border-top: 1px solid #ddd;
+}
+
+.extras-header {
+  font-weight: bold;
+  font-size: 15px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.extras-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.extras-list li {
+  margin-bottom: 6px;
+}
+
+.extras-list a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.extras-list a:hover {
+  text-decoration: underline;
+}
+
+/* Abas de navegação */
+.aula-tabs-wrapper {
+  background-color: #f9f9f9;
+  padding: 5px 10px;
+  border-bottom: 2px solid #ccc;
+}
+
+.aula-tabs {
+  display: flex;
+  overflow-x: auto;
+  gap: 5px;
+  scroll-behavior: smooth;
+  padding-bottom: 5px;
+}
+
+.tab {
+  padding: 6px 14px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  border-radius: 5px 5px 0 0;
+  cursor: pointer;
+  font-weight: normal;
+  white-space: nowrap;
+  transition: background-color 0.2s ease;
+}
+
+.tab:hover {
+  background-color: #e0e0e0;
+}
+
+.tab.active {
+  background-color: #0077cc;
+  color: #fff;
+  font-weight: bold;
+  border-top: 2px solid #005fa3;
+}
+
+/* Botões de rolagem */
+.aula-nav-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 5px;
+}
+
+.aula-nav-buttons button {
+  padding: 4px 8px;
+  font-size: 16px;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.aula-nav-buttons button:hover {
+  background-color: #ddd;
+}
+
+/* Itens concluídos -*/
+.content-item.completed {
+  background-color: #e6ffe6;
+  border-left: 4px solid green;
+  transition: background-color 0.2s ease;
+}
+
+.check-icon.completed {
+  color: green;
+  font-weight: bold;
+}
+
+.check-icon {
+  color: #aaa;
+}
+
+.tab.bloqueada {
+  background-color: #ddd;
+  color: #888;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.aba.ativa {
+  background-color: #007bff;
+  color: red !important;
+  font-weight: bold;
+  border-bottom: 2px solid #0056b3;
+}
+
+/* lembrete 
+  Ajuste visual para destacar a aba da aula ativa.
+  Esse estilo é aplicado quando a aula está sendo exibida.
+  Teste inicial: cor vermelha para ver se está funcionando.
+*/
+
+#abaAtiva {
+  color: red !important;
+  background-color: #e6ffe6 !important;
+  color: black !important;
+  font-weight: bold !important;
+  border-bottom: 2px solid #0056b3;
+}
+/*Controles para apresentação dos itens_aula */
+.texto-pre,
+.texto-pos {
+  font-style: italic;
+  color: #555;
+  margin: 15px 0;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-left: 4px solid #ccc;
+}
+
+
+.item-conteudo {
+  margin: 15px 0;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.quadro-conteudo {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  border-radius: 6px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.botao-acao {
+  background-color: #0066cc;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 15px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.botao-acao:hover {
+  background-color: #004c99;
+}
+
+
+/* Tootip flutuante */
+.hint-icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #ddd;
+  color: #333;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 8px;
+  position: relative;
+}
+
+
+.dica-tooltip {
+  position: absolute;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 10px;
+  max-width: 300px;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  display: none;
+  z-index: 1000;
+  white-space: normal;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Setinha do balão de fala */
+.dica-tooltip::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  right: 12px;
+  border-width: 8px;
+  border-style: solid;
+  border-color: transparent transparent #f9f9f9 transparent;
+}
+
+/* Quando visível */
+.dica-tooltip.show {
+  display: block;
+  opacity: 1;
+}
+
+
+/* relacionado a checklist */
+.progresso-container {
+  width: 100%;
+  height: 10px;
+  background: #eee;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+.progresso-preenchido {
+  height: 100%;
+  background: #4caf50;
+  width: 0%;
+  transition: width 0.3s ease;
+  border-radius: 5px;
+}
+
+.hint-icon {
+  display: inline-block;
+  margin-left: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.2s ease;
+}
+
+.hint-icon:hover {
+  transform: scale(1.2);
+}
+
+.destaque-dica {
+  color: #f4a261; /* laranja claro */
+}
+
+.checklist-item input[type="checkbox"] {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  cursor: pointer;
+  vertical-align: middle;
+  margin-right: 8px;
+  transition: border-color 0.2s ease;
+}
+
+.checklist-item input[type="checkbox"]:checked {
+  border-color: #4caf50;
+  background-color: #4caf50;
+}
+
+/* menu verde*/
+
+/* Conteúdos do menu SEMPRE verdes */
+.content-group .content-item {
+  background-color: #e6ffe6;          /* verde claro */
+  border-left: 4px solid green;       /* mesma linguagem visual do completed */
+}
+
+/* Mantém verde no hover também */
+.content-group .content-item:hover {
+  background-color: #e6ffe6;
+}
+
+/* Layout da linha + hitbox pequeno do ícone */
+.content-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 10px 12px;
+}
+
+.content-item .item-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.check-icon {
+  display: inline-flex;
+  width: 24px;      /* hitbox pequeno e preciso */
+  height: 24px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  user-select: none;
+}
